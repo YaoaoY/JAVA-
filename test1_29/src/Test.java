@@ -7,6 +7,39 @@ import java.sql.Date;
  * Date: 2023-01-28
  * Time: 22:46
  */
+class Person{
+    private String name;
+    private int age;
+//构造器
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
 class A{
 }
 class B extends A{
@@ -40,6 +73,16 @@ public class Test {
         System.out.println(str3.equals(str4));
 
         //System.out.println("hh" == new Date(1));
-        System.out.println(new A() == new B());
+        //验证==的运算数的限制
+        A a = new A();
+        B b = new B();
+        System.out.println(a == b);
+
+        //哈希值的验证
+        System.out.println("a对象的哈希值:"+a.hashCode());
+        System.out.println("b对象的哈希值:" + b.hashCode());
+
+        Person person = new Person("yaoyao", 19);
+        System.out.println(person);
     }
 }
