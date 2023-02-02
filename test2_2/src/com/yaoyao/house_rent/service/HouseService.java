@@ -27,8 +27,7 @@ public class HouseService {
             System.out.println("数组已满，不能再添加");
             return false;
         }
-        houses[houseNumsFlag - 1] = newHouse;
-        houseNumsFlag++;
+        houses[houseNumsFlag++] = newHouse;
         newHouse.setId(++houseIdFlag);
         return true;
     }
@@ -62,5 +61,9 @@ public class HouseService {
         }
         houses[--houseNumsFlag]=null;//删除一个后记得原先最后一个元素置为null，且房屋对象数量减1
         return true;
+    }
+
+    public House[] getList(){
+        return houses;
     }
 }

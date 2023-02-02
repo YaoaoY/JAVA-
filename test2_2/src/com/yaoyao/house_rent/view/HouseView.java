@@ -12,7 +12,7 @@ import com.yaoyao.house_rent.utils.Utility;
  * Time: 21:28
  */
 public class HouseView {
-    private boolean loop;
+    private boolean loop = true;
     private HouseService houseService = new HouseService(10);
 
     public void MainMenu() {
@@ -56,13 +56,13 @@ public class HouseView {
         System.out.println("====================增加房屋信息====================");
         System.out.print("请输入房屋拥有者姓名:");
         String holderName = Utility.readString(10);
-        System.out.println("请输入房屋拥有者电话:");
+        System.out.print("请输入房屋拥有者电话:");
         String holderPhone = Utility.readString(11);
-        System.out.println("请输入此房屋具体地址:");
+        System.out.print("请输入此房屋具体地址:");
         String address = Utility.readString(20);
-        System.out.println("请输入月租:");
+        System.out.print("请输入月租:");
         int monthlyRent = Utility.readInt();
-        System.out.println("请输入房屋状态:");
+        System.out.print("请输入房屋状态:");
         String rentState = Utility.readString(10);
         House house = new House(holderName, holderPhone, address, monthlyRent, rentState);
         if (houseService.add(house)) {
@@ -116,7 +116,7 @@ public class HouseView {
             System.out.println("==========放弃修改操作==============");
             return;
         }
-        House house = houseService.findById(id)
+        House house = houseService.findById(id);
         if (house == null) {
             System.out.println("该房屋不存在");
             return;
@@ -129,15 +129,51 @@ public class HouseView {
         }
 
         System.out.println("房屋持有者电话（" + house.getHolderName() + "):");
-        String newHolderPhone=Utility.readString(11,"");
-        if(!"".equals(newHolderPhone)){
+        String newHolderPhone = Utility.readString(11, "");
+        if (!"".equals(newHolderPhone)) {
             house.setHolderPhone(newHolderPhone);
         }
 
-        System.out.println("房屋地址（"+house.getAddress()+"):");
-        String newAddress=Utility.readString(20,"");
-        if(!"".equals(newAddress)){
-            house.se
+        System.out.println("房屋地址（" + house.getAddress() + "):");
+        String newAddress = Utility.readString(20, "");
+        if (!"".equals(newAddress)) {
+            house.setAddress(newAddress);
+        }
+
+        System.out.println("月租金（" + house.getMonthlyRent() + "):");
+        int newMonthlyRent = Utility.readInt(-1);
+        if (newMonthlyRent != -1) {
+            house.setMonthlyRent(newMonthlyRent);
+        }
+
+        System.out.println("房屋当前出租状态（" + "):");
+        String newRentState = Utility.readString(10, "");
+        if (!newRentState.equals("")) {
+            house.setRentState(newRentState);
+        }
+
+        System.out.println("===========修改房屋信息成功=========");
+    }
+
+    //展示
+    private void listHouse() {
+        System.out.println("=========房屋列表=========");
+        System.out.println("编号\t\t房主\t\t电话\t\t地址\t\t月租\t\t状态（未出租/已出租）");
+        House[] houses = houseService.getList();
+        for (int i = 0; i < houses.length; i++) {
+            //保证了输出的都是有效信息
+            if(houses[i]==null){
+                break;
+            }
+            System.out.println(houses[i]);
         }
     }
+    //退出
+    public void exit(){
+        char c = Utility.readConfirmSelection();
+        if (c == 'Y'){
+            loop = false;
+        }
+    }
+
 }
