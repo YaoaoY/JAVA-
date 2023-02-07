@@ -10,8 +10,4 @@ public class Dog extends Animal {
     public void eat() {
         System.out.println("啃骨头ing");
     }
-
-    public Dog() {
-        //super();
-    }
 }
