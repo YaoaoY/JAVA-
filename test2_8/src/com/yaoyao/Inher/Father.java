@@ -26,7 +26,7 @@ public class Father {
         a = 2;
     }
 
-    public static void  enjoy() {
+    public static void enjoy() {
         System.out.println("enjoy smoking");
     }
 
