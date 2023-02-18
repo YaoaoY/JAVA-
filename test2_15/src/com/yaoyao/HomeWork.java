@@ -27,7 +27,7 @@ public class HomeWork {
         }
         String str1 = "Huang fu yao";
         printByFormat(str1);
-        Map
+
 
     }
     public static void printByFormat(String str){

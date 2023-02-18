@@ -20,9 +20,6 @@ public class calendar_ {
         LocalDateTime now = LocalDateTime.now();
         System.out.println(now);
         //创建DateTimeFormatter对象
-        while (iterator.hasNext()) {
-            Object next =  iterator.next();
-            
-        }
+
     }
 }
