@@ -45,7 +45,7 @@ public class Main {
              hashSet) {
             System.out.println(obj.toString());
         }
-        LinkedHashMap
+        ArrayList
     }
 
 
@@ -97,7 +97,7 @@ class Person {
                 ", age=" + age +
                 '}';
     }
-    LinkedHashSet
+
 }
 
 class Book {
