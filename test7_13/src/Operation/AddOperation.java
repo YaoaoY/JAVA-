@@ -22,7 +22,7 @@ public class AddOperation implements IOperation{
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入书名:");
         String name = scanner.nextLine();
-        scanner.nextInt();
+//        scanner.nextLine();
         System.out.println("请输入作者：");
         String author = scanner.nextLine();
         System.out.println("请输入图书价格：");

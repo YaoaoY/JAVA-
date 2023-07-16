@@ -21,7 +21,7 @@ public class BorrowOperation implements IOperation {
         String name = scanner.nextLine();
         for (int i = 0; i < bookList.getBookNum(); i++) {
             Book book = bookList.getBookByIndex(i);
-            if (name.equals(book.getName()) && book.isBorrowed()) {
+            if (name.equals(book.getName()) && !book.isBorrowed()) {
                 book.setBorrowed(true);
                 System.out.println("借阅成功");
                 return;

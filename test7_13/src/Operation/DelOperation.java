@@ -22,11 +22,14 @@ public class DelOperation implements IOperation{
         String name = scanner.nextLine();
             Book book = bookList.getBookByIndex(i);
             if (name.equals(book.getName())) {
-              for(int j = i+1; j < bookList.getBookNum();j++){
-
+              for( int j = i+1; j < bookList.getBookNum();j++){
+                  bookList.setBooks(j-1,bookList.getBookByIndex(j));
               }
+                bookList.setBookNum(bookList.getBookNum()-1);
+                System.out.println("删除成功！");
+                return;
             }
         }
-        System.out.println("借阅失败！");
+        System.out.println("删除失败！");
     }
 }
