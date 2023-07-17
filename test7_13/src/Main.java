@@ -5,13 +5,6 @@ import user.User;
 
 import java.util.Scanner;
 
-/**
- * Created with IntelliJ IDEA.
- * Description:
- * Author: yaoyao2024
- * Date: ${YEAR}-${MONTH}-${DAY}
- * Time: ${TIME}
- */
 public class Main {
     public static User login(){
         Scanner scanner = new Scanner(System.in);

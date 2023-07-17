@@ -4,13 +4,6 @@ import Operation.*;
 
 import java.util.Scanner;
 
-/**
- * Created with IntelliJ IDEA.
- * Description:
- * Author: yaoyao2024
- * Date: 2023-07-13
- * Time: 20:31
- */
 public class NormalUser extends User{
     public NormalUser(String name) {
         super(name);
