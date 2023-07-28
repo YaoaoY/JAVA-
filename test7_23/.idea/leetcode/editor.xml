@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[125]验证回文串.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/doc/content/[125]验证回文串.md" />
+              <option name="frontendQuestionId" value="leetcode.cn125" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[125]验证回文串.java" />
+              <option name="titleSlug" value="valid-palindrome" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[2443]反转之后的数字和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/doc/content/[2443]反转之后的数字和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2443" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[2443]反转之后的数字和.java" />
+              <option name="titleSlug" value="sum-of-number-and-its-reverse" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[387]字符串中的第一个唯一字符.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/doc/content/[387]字符串中的第一个唯一字符.md" />
+              <option name="frontendQuestionId" value="leetcode.cn387" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[387]字符串中的第一个唯一字符.java" />
+              <option name="titleSlug" value="first-unique-character-in-a-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[434]字符串中的单词数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/doc/content/[434]字符串中的单词数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn434" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[434]字符串中的单词数.java" />
+              <option name="titleSlug" value="number-of-segments-in-a-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[443]压缩字符串.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/doc/content/[443]压缩字符串.md" />
+              <option name="frontendQuestionId" value="leetcode.cn443" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[443]压缩字符串.java" />
+              <option name="titleSlug" value="string-compression" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[709]转换成小写字母.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/doc/content/[709]转换成小写字母.md" />
+              <option name="frontendQuestionId" value="leetcode.cn709" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../TempFile/leetcode/editor/cn/[709]转换成小写字母.java" />
+              <option name="titleSlug" value="to-lower-case" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
